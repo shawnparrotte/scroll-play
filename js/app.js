@@ -36,6 +36,10 @@ var draw = setInterval(function(){
     //transform box1 up and out!
     $("#box1").css("transform", box1move);
 
+    //now we need to create an opacity percentage on shadowbox 2
+    var box2opacity = 1 - $(window).scrollTop()/$(window).height();
+    $("#shadow2").css("opacity", box2opacity);
+
   }
 
   //*** 2nd box *** inbetween window height and window height x 2
@@ -54,11 +58,8 @@ var draw = setInterval(function(){
 
     //create variables for box2 transform
     var x = $(window).height(), y = $(window).scrollTop() - x;
-
     //create complex variable for transform function
     var box2move = "translate(0px,-" + y + "px)";
-    //add back later
-    //var shadow2move = "translate(0px,-" + ($(window).scrollTop() - $(window).height()) + "px)"
 
     //create variable for moving top parameter for box1
     var box1out = -($(window).height() + 20);
@@ -67,7 +68,10 @@ var draw = setInterval(function(){
 
     //transform box2 up and out!
     $("#box2").css("transform", box2move);
-    //$("#shadow2").css("transform", shadow2move)
+
+    //now we need to create an opacity percentage on shadowbox 3
+    var box3opacity = 1 - ($(window).scrollTop()-$(window).height())/$(window).height();
+    $("#shadow3").css("opacity", box3opacity);
 
   }
 
@@ -85,11 +89,8 @@ var draw = setInterval(function(){
 
     //create variables for box3 transform
     var x = $(window).height() * 2, y = $(window).scrollTop() - x;
-
     //create complex variable for transform function
     var box3move = "translate(0px,-" + y + "px)";
-    //add back later
-    //var shadow2move = "translate(0px,-" + ($(window).scrollTop() - $(window).height()) + "px)"
 
     //create variable for moving top parameter for box2
     var box2out = -($(window).height() + 20);
@@ -98,7 +99,10 @@ var draw = setInterval(function(){
 
     //transform box3 up and out!
     $("#box3").css("transform", box3move);
-    //$("#shadow2").css("transform", shadow2move)
+
+    //now we need to create an opacity percentage on shadowbox 4
+    var box4opacity = 1 - ($(window).scrollTop()-($(window).height()*2))/$(window).height();
+    $("#shadow4").css("opacity", box4opacity);
 
   }
 
@@ -114,11 +118,8 @@ var draw = setInterval(function(){
 
     //create variables for box4 transform
     var x = $(window).height() * 3, y = $(window).scrollTop() - x;
-
     //create complex variable for transform function
     var box4move = "translate(0px,-" + y + "px)";
-    //add back later
-    //var shadow2move = "translate(0px,-" + ($(window).scrollTop() - $(window).height()) + "px)"
 
     //create variable for moving top parameter for box3
     var box3out = -($(window).height() + 20);
@@ -127,7 +128,10 @@ var draw = setInterval(function(){
 
     //transform box4 up and out!
     $("#box4").css("transform", box4move);
-    //$("#shadow2").css("transform", shadow2move)
+
+    //now we need to create an opacity percentage on shadowbox 4
+    var box5opacity = 1 - ($(window).scrollTop()-($(window).height()*3))/$(window).height();
+    $("#shadow5").css("opacity", box5opacity);
 
   }
 

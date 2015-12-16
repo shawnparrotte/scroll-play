@@ -28,7 +28,7 @@
 
 #shadow2 {
   background-color: black;
-  z-index: 0;
+  z-index: 90;
 }
 
 #box2 {
@@ -38,7 +38,7 @@
 
 #shadow3 {
   background-color: black;
-  z-index: 0;
+  z-index: 70;
 }
 
 #box3 {
@@ -48,7 +48,7 @@
 
 #shadow4 {
   background-color: black;
-  z-index: 0;
+  z-index: 50;
 }
 
 #box4 {
@@ -58,7 +58,7 @@
 
 #shadow5 {
   background-color: black;
-  z-index: 0;
+  z-index: 30;
 }
 
 #box5 {
