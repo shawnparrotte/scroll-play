@@ -1,0 +1,68 @@
+.content-box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.content-box img {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+  margin: auto;
+  min-width: 400px;
+}
+
+.shadow-box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+}
+
+#box1 {
+  background-color: blue;
+  z-index: 100;
+
+}
+
+#shadow2 {
+  background-color: black;
+  z-index: 0;
+}
+
+#box2 {
+  background-color: green;
+  z-index: 80;
+}
+
+#shadow3 {
+  background-color: black;
+  z-index: 0;
+}
+
+#box3 {
+  background-color: yellow;
+  z-index: 60;
+}
+
+#shadow4 {
+  background-color: black;
+  z-index: 0;
+}
+
+#box4 {
+  background-color: red;
+  z-index: 40;
+}
+
+#shadow5 {
+  background-color: black;
+  z-index: 0;
+}
+
+#box5 {
+  background-color: purple;
+  z-index: 20;
+  text-align: center;
+}
